@@ -1,0 +1,30 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode reverse=null;//最终返回
+        ListNode nodeData=null;//临时节点
+        while(head!=null){
+            nodeData=new ListNode(head.val);
+            if(reverse==null){
+                reverse=nodeData;
+            }else{
+                nodeData.next=reverse;
+                reverse=nodeData;
+            }
+           head=head.next;
+        }
+        return reverse;
+    }
+}
+/**
+*  对链表很陌生，只能用最笨的办法了。头插法
+*
+*
+*/
