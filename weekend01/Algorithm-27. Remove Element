@@ -4,8 +4,10 @@ Given an array nums and a value val, remove all instances of that value in-place
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
-
-
+还有这么奇葩的题？
+正常的解法
+执行用时 : 8 ms, 在Remove Element的Java提交中击败了71.39% 的用户
+内存消耗 : 37.6 MB, 在Remove Element的Java提交中击败了0.97% 的用户
 
 */
 
