@@ -22,6 +22,25 @@ class Solution {
         }
         return reverse;
     }
+    public ListNode reverseList01(ListNode head) {
+        ListNode reverse=null;//最终返回
+        ListNode nodeData=null;//临时节点
+        while(head!=null){
+            nodeData=head.next;
+            head.next=reverse;
+            reverse=head;
+            head=nodeData;
+        }
+        return reverse;
+    }
+    //说实话递归这个还是没搞太懂，一周以后再看看
+    public ListNode reverseList02(ListNode head) {
+        if(head==null||head.next==null) return head;
+        ListNode reverse=reverseList02(head.next);
+        head.next.next=head;
+        head.next=null;
+        return reverse;
+    }
 }
 /**
 *  对链表很陌生，只能用最笨的办法了。头插法
