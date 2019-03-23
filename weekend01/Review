@@ -1,0 +1,15 @@
+From Dappery, a Large Scale Distributed Systems Tracing Infrastructure
+
+1.three  design goals of Dapper:
+	a.low overhead:a sample of just one out of thousands of requests provides sufficient information for many common uses of the tracing data.
+	b.Application_level transparency: Dapper is restricted to a low enough level in the software stack that even largescale distributed systems like Google web search could be traced without additional annotations.
+	c.Scalability: handle the size of Google’s services and clusters for at least the next few years
+
+2.other similiar tracing systems:
+	a.Magpie
+	b.X-Trace
+	c.Pinpoint	
+3. a tree of nested RPCs
+	model traces using trees,spans annotation.
+	span id 
+	parent span id
