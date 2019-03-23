@@ -1,2 +1,0 @@
-# myarts
-grow up 
