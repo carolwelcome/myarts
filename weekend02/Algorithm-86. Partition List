@@ -1,0 +1,43 @@
+#text 86. Partition List
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode partition(ListNode head, int x) {
+        ListNode part=null;//保存头指针
+        ListNode tail=null;
+        ListNode part1= null;
+        ListNode tail1=null;
+        while(head!=null){
+            ListNode dataNode=new ListNode(head.val);
+            if(head.val<x){
+                if(part==null)
+                    part=tail=dataNode;
+                else{
+                    tail.next=dataNode;//将新节点连接到链表的尾部
+                    tail=dataNode;////tail永远存储最后一个节点的地址
+                }
+            }else{
+                
+                if(part1==null)
+                    part1=tail1=dataNode;
+                else{
+                    tail1.next=dataNode;//将新节点连接到链表的尾部
+                    tail1=dataNode;////tail永远存储最后一个节点的地址
+                }
+            }
+            head=head.next;
+        }
+        if(tail==null) return part1;        
+        tail.next=part1;
+        return part;
+    }
+}
+
+执行用时 : 1 ms, 在Partition List的Java提交中击败了84.18% 的用户
+内存消耗 : 34.8 MB, 在Partition List的Java提交中击败了0.94% 的用户
