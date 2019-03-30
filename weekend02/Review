@@ -1,1 +1,51 @@
 Review
+
+Bitcoin :A Peer to Peer Electronic Cash System
+比特币：点对点的电子现金系统
+Abstract:A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to annother without going through a financial institution .Digital Signatures provide part of the solution,but the main benefits are lost if a trusted third party is still required to prevent double-spending.We propose a solution to the double-spending problem using a peer-to-peer network.The network timestamps transactions by hashing them into an ongoing chain
+of hash-based proof of work , forming a record that cannot be changed without redoing the proof-of-work.The longest chain not only serves as proof of the sequence of events witnessed ,but proof that it came from the largest pool of CPU power.As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network , they'll generate the longest chain and outpace attackers.The network itself requires minimal structure.Messages are broadcast on the best effort basis, and nodes can leave and rejoin the network at will,accepting the longest proof-of-work chain as proof of what happened while they were gone.
+组词：纯粹 点对点 版本 电子现金 允许 直接发送在线支付 从一方到另一方 无需通过金融机构
+造句：1、一个纯粹的点对点电子现金系统是允许不通过金融机构，来完成从一方到另一方的直接在线支付。
+组词：数字签名 提供 部分解决方案 但是 最大的收益 丢掉 是否需要一个可信的第三方 阻止“双花”
+造句：2、数据签名为其提供了部分的解决方案，但是最大的收益是一个可信的、能阻止“双花”的第三方可以丢掉了
+组词：我们的目的 解决方案 双花问题  通过点对点的网络
+造句：3、我们的目标就是通过这样一个点对点的网络来解决“双花”问题
+
+组词：网络时间戳 交易 做哈希 基于哈希工作量证明r 不间断的链  形成不可篡改的记录
+造句：4、对网络时间戳交易做哈希，并把他们链接到基于哈希工作量证明的不间断链上，以此来形成不可篡改的记录。
+组词：最长的链 不仅 作用于 事件的顺序证明，而且证明了 CPU算力的最大资源池。
+造句：5、最长的链不仅可以证明交易事件的先后顺序，还可以证明它是来自于最大CPU算力的资源池
+组词：只要 主要的 CPU算力 被控制 节点（不合作 去攻击网络），他们会形成最长的链并超过攻击者
+造句：6、只要大部分的CPU算力被这些攻击网络的节点所控制，他们就会形成最长的链并成为超级攻击者
+组词：网络本身 需要 最小结构
+造句：7、网络本身需要最小的结构
+组词：消息 广播 尽力而为 节点 离开 重新加入 网络 随意 接收 最长工作量证明链 证据 在他们离开期间发生了什么
+造句：8、消息被全网尽最大可能的传播，网络中的节点也可以随意的离开和重新加入，但这些节点得下载他们离开期间所产生的最长的链
+Introduction:
+Commerce on the Internet has come to rely almost exclusively on financial institutions serving as
+trusted third parties to process electronic payments. While the system works well enough for
+most transactions, it still suffers from the inherent weaknesses of the trust based model.
+Completely non-reversible transactions are not really possible, since financial institutions cannot
+avoid mediating disputes. The cost of mediation increases transaction costs, limiting the
+minimum practical transaction size and cutting off the possibility for small casual transactions,
+and there is a broader cost in the loss of ability to make non-reversible payments for nonreversible services. With the possibility of reversal, the need for trust spreads. Merchants must
+be wary of their customers, hassling them for more information than they would otherwise need.
+A certain percentage of fraud is accepted as unavoidable. These costs and payment uncertainties
+can be avoided in person by using physical currency, but no mechanism exists to make payments
+over a communications channel without a trusted party.
+What is needed is an electronic payment system based on cryptographic proof instead of trust,
+allowing any two willing parties to transact directly with each other without the need for a trusted
+third party. Transactions that are computationally impractical to reverse would protect sellers
+from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. In
+this paper, we propose a solution to the double-spending problem using a peer-to-peer distributed
+timestamp server to generate computational proof of the chronological order of transactions. The
+system is secure as long as honest nodes collectively control more CPU power than any
+cooperating group of attacker nodes.
+
+
+组词：商业 互联网（电商？） 依赖 几乎完全 金融机构  服务 可信任的第三方 进行电子支付
+造句：1、电商几乎完全依赖于可信的第三方金融机构服务来完成电子支付。
+组词：虽然 系统 正常工作 对大部分交易来说就足够了 但仍然 受制于 基础信用模型固有缺陷
+造句：2、只要系统能够正常运转，对于大部分交易来说足够了，但这种模式仍然受制于基础信用模型的固有缺陷
+组词：完全不可逆的交易是不可能出现的 金融机构不可能避免调节纠纷
+造句：3、完全不可逆的交易是真的不可能，就像金融机构不可能避免需要调节纠纷一样。
