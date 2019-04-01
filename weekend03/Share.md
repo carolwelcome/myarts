@@ -6,8 +6,6 @@ Lambda表达式
 1、语法
 ------
 lambda 表达式的语法格式如下：
-* 列表一
-
 (parameters) -> expression或(parameters) ->{statements; }
 
 以下是lambda表达式的重要特征:
