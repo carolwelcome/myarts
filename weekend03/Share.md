@@ -60,3 +60,11 @@ public class LambdaTest {
     }
 }
 ```
+使用Lambda 表达式需要注意以下两点：
+
+* Lambda 表达式主要用来定义行内执行的方法类型接口，例如，一个简单方法接口。在上面例子中，我们使用各种类型的Lambda表达式来定义MathOperation接口的方法。然后我们定义了sayMessage的执行。
+
+* Lambda 表达式免去了使用匿名方法的麻烦，并且给予Java简单但是强大的函数化的编程能力。
+
+
+[csdn](https://blog.csdn.net/yitian_66/article/details/81010434)
