@@ -1,3 +1,16 @@
+---
+title: Lambda Share
+date: 2019-04-06 15:38:22
+categories:  #分类
+    - attendance
+tags:   #标签
+    - ARTS
+    - share
+    - lambda
+description: 
+    Lambda表达式
+---
+
 Lambda表达式
 ==========
 Lambda表达式也称为闭包，是Java8 发布的重要新特性，Lambda允许函数作为一个方法的参数（函数作为参数传递进方法中），使用这种表达式可以使代码更加简洁紧凑
