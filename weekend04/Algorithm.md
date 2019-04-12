@@ -46,4 +46,23 @@ class Solution {
     }
     
 }
+
+//回文链表-234:果其不然，我还是找到了递归的实现代码,哈哈，虽说时间复杂度差点，还是挺高兴的
+//执行用时 : 4 ms, 在Palindrome Linked List的Java提交中击败了31.04% 的用户
+//内存消耗 : 46.6 MB, 在Palindrome Linked List的Java提交中击败了15.81% 的用户
+public class Solution{
+	ListNode tmp;
+	public boolean isPalindrome(ListNode head) {
+        tmp=head;
+        return isPalindromeTrue(head);
+    }
+
+    public boolean isPalindromeTrue(ListNode head){
+    	if(head==null) return true;
+    	boolean result=isPalindromeTrue(head.next)&(tmp.val==head.val);
+    	tmp=tmp.next;
+    	return result;
+    }
+}
+}
 ```
