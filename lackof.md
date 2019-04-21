@@ -1,6 +1,6 @@
 知识缺失本：
 1、springboot基础
-2、io编程
+2、io编程-netty
 3、springcloud、dubbo基础
 4、rpc原理
 5、大数据技术基础
@@ -17,3 +17,4 @@
 16、jvm虚拟机
 17、python
 18、golang
+19、Mysql
