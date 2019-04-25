@@ -1,4 +1,4 @@
-知识缺失本：
+缺失本：
 1、springboot基础(CommandLineRunner系列)
 2、io编程-netty
 3、springcloud、dubbo基础
@@ -12,7 +12,7 @@
 11、elesticsearch基础
 12、fastDFS
 13、solr
-14、并发编程
+14、并发编程（对java并发包工具的使用）
 15、数据结构与算法整体
 16、jvm虚拟机
 17、python
