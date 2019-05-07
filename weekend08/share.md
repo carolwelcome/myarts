@@ -1,0 +1,1 @@
+6、Thread 与Runnable有什么区别，为什么new Runnable接口不会新建线程？本周

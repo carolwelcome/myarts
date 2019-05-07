@@ -7,7 +7,7 @@ tags:   #标签
     - ARTS
     - 图 
 description: 
-    小镇法官，用了一种特别恶心的办法还是解决了。
+    小镇法官，用了一种特别恶心的办法还是解决了
 ---
 ### 解题思路
 今天早上看了布隆过滤器就想着怎么才能试一试呢。结果还是用最笨的办法让提交了，一看结果还真是有点乐。
@@ -62,6 +62,20 @@ class Solution {
         return result;
     }
 
-    //使用出度入度实现思路再来实现一下吧，待续。。。。
+    //来一份别人写的代码
+    public int findJudge(int N, int[][] trust) {
+        int[][] people = new int[N][2];
+        for(int[] person : trust){
+            int out = person[0];
+            int in = person[1];
+            people[out - 1][0] ++;
+            people[in - 1][1] ++;
+        }
+        for(int i = 0; i < N; i ++){
+            if(people[i][0] == 0 && people[i][1] == N - 1)
+                return i + 1;
+        }
+        return -1;
+    }
 }
 ```
