@@ -5,3 +5,4 @@
 4、serialVersionUID是什么，为什么实体类都要序列化？
 5、弄懂B+
 6、Thread 与Runnable有什么区别，为什么new Runnable接口不会新建线程？本周
+7、codis是个什么鬼
