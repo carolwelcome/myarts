@@ -172,3 +172,44 @@ class MinStack {
     }
 }
 ```
+
+
+```Java
+//执行用时 : 100 ms, 在Min Stack的Java提交中击败了87.10% 的用户
+//内存消耗 : 39.5 MB, 在Min Stack的Java提交中击败了96.35% 的用户
+class MinStack {
+    
+    Stack<Integer> stack;
+    Stack<Integer> stackMin;//存放求最小值的栈
+
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack=new Stack();
+        stackMin=new Stack();
+    }
+
+    public void push(int x) {
+        stack.push(x);
+        if(stackMin.isEmpty()||x<(int)stackMin.peek())
+            stackMin.push(x);
+        else {
+            stackMin.add(stackMin.peek());//这是一个晶狗的地方，push和add都可以，其实在这儿只是给这些元素一个占位符而矣（表达的是这种意思 ：在该元素之前的所有元素中，最小元素是栈顶元素就可以，很妙）
+        }
+
+    }
+
+    public void pop() {
+        stack.pop();
+        stackMin.pop();
+    }
+
+    public int top() {
+        return  (int)stack.peek();
+    }
+
+    public int getMin() {
+        //stack.search()
+        return  (int)stackMin.peek();
+    }
+}
+```
