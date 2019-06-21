@@ -7,7 +7,7 @@
 6、kafka基础
 7、kubernetes基础
 8、docker整体
-9、nginx整体
+9、nginx整体（多长时间），（多长时间）redis,消息队列（多长时间）
 10、分布式系统整体
 11、elesticsearch基础
 12、fastDFS
@@ -17,5 +17,5 @@
 16、jvm虚拟机
 17、python
 18、golang
-19、Mysql
+19、Mysql（多长时间）
 20、关于缓存的理解（https://github.com/qiujiayu/AutoLoadCache）
