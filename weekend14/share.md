@@ -9,5 +9,3 @@ tags:   #标签
 description: 
     ES6入门教育
 ---
-
-### ES6
