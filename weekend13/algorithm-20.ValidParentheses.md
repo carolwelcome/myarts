@@ -55,7 +55,7 @@ class Solution {
         return true;
     }
 }
-//哈哈，看我超级无敌不要脸的解法
+//哈哈，看我超级无敌不要脸的解法，能写出这样的代码也是挺不要脸的
 //执行用时 :249 ms, 在所有Java提交中击败了5.04%的用户
 //内存消耗 :48.7 MB, 在所有Java提交中击败了5.01%的用户
 public  boolean isValid(String s) {
@@ -75,6 +75,20 @@ public  boolean isValid(String s) {
         if(!"".equals(s)) return false;
         return true;
     }
+//执行用时 :188 ms, 在所有Java提交中击败了5.04%的用户
+//内存消耗 :63.7 MB, 在所有Java提交中击败了5.01%的用户
+    class Solution {
+   
+    public  boolean isValid(String s) {
+        while (s.contains("{}")||s.contains("[]")|| s.contains("()")){
+            if(s.contains("{}")) s=s.replace("{}","");
+            if(s.contains("()")) s=s.replace("()","");
+            if(s.contains("[]")) s=s.replace("[]","");
+        }
+
+        return s.isEmpty();
+    }
+}
 
 
 ```
