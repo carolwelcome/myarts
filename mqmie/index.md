@@ -1,0 +1,5 @@
+本周任务：
+activemq安装测试-javademo
+rebbitmq安装测试-javademo
+recoketmq安装测试-javademo
+kafka安装测试-javademo
